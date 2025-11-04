@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أفضل ألعاب الأكشن للأندرويد - موقعك</title>
+    
+    <meta property="og:title" content="أقوى ألعاب الأكشن للأندرويد لعام 2024">
+    <meta property="og:url" content="https://[اسم المستخدم الخاص بك].github.io/..."> 
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=ACTION+GAMES"> 
+    <meta property="og:description" content="اكتشف أقوى ألعاب الأكشن والمغامرات لهواتف الأندرويد.">
+    
+    <style>
+        /* ---------------------------------- */
+        /* BASE STYLES & LAYOUT */
+        /* ---------------------------------- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            direction: rtl; 
+            line-height: 1.6;
+        }
+
+        .main-page-wrapper {
+            display: grid;
+            grid-template-columns: 1fr; 
+            gap: 30px;
+            max-width: 1200px;
+            margin: 20px auto; 
+            padding: 0 20px;
+            min-height: 70vh; /* لضمان ارتفاع مناسب قبل التذييل */
+        }
+
+        @media (min-width: 900px) {
+            .main-page-wrapper {
+                grid-template-columns: 1fr 3fr; 
+            }
+        }
+
+        /* ---------------------------------- */
+        /* SIDEBAR STYLING */
+        /* ---------------------------------- */
+        .sidebar-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky; 
+            top: 20px; 
+            align-self: start; 
+        }
+
+        .sidebar-container h3 {
+            color: #007bff;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .category-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .category-list li {
+            margin-bottom: 8px;
+            border-bottom: 1px dashed #eee;
+            padding-bottom: 5px;
+        }
+
+        .category-list a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 5px 0;
+            transition: color 0.2s;
+        }
+
+        .category-list a:hover {
+            color: #28a745;
+        }
+
+        /* ---------------------------------- */
+        /* GAME GRID AND CARD STYLING */
+        /* ---------------------------------- */
+        .content-area h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2em;
+            padding-right: 10px;
+        }
+        
+        .games-grid {
+            display: grid; 
+            gap: 20px; 
+        }
+
+        @media (min-width: 600px) {
+            .games-grid {
+                grid-template-columns: 1fr 1fr; 
+            }
+        }
+
+        @media (min-width: 900px) {
+            .games-grid {
+                grid-template-columns: repeat(3, 1fr); 
+            }
+        }
+
+        .game-card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: right;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .game-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        .game-info {
+            padding: 15px;
+        }
+        
+        .download-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background-color 0.2s;
+        }
+
+        .download-btn:hover {
+            background-color: #1e7e34;
+        }
+        
+        /* ---------------------------------- */
+        /* MODAL / OVERLAY CONTENT STYLING (لصفحات السياسات) */
+        /* ---------------------------------- */
+        /* إخفاء المحتوى الافتراضي */
+        .legal-content, .contact-page, .about-page {
+            display: none; 
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 100;
+        }
+
+        .legal-content h1, .contact-page h1, .about-page h1 {
+            color: #007bff;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .contact-page input[type="text"],
+        .contact-page input[type="email"],
+        .contact-page textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            text-align: right;
+        }
+        
+        .contact-page button[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* ---------------------------------- */
+        /* FOOTER STYLING */
+        /* ---------------------------------- */
+        .site-footer {
+            background-color: #333; 
+            color: #f4f7f6; 
+            padding-top: 40px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 30px;
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between;
+            text-align: right;
+        }
+        
+        .footer-section {
+            width: 100%; 
+            margin-bottom: 20px;
+        }
+
+        @media (min-width: 600px) {
+            .footer-section {
+                width: 30%;
+            }
+        }
+
+        .footer-section h3 {
+            color: #007bff;
+            border-bottom: 2px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-section a:hover {
+            color: #fff;
+        }
+
+        .copyright {
+            background-color: #222;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+            border-top: 1px solid #444;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="main-page-wrapper">
+        
+        <aside class="sidebar-container">
+            <h3>تصنيفات الألعاب 🕹️</h3>
+            <ul class="category-list">
+                <li><a href="#home">الصفحة الرئيسية</a></li>
+                <li><a href="#action">أكشن ومغامرات</a></li>
+                <li><a href="#sports">رياضة</a></li>
+                <li><a href="#puzzle">ألغاز وذكاء</a></li>
+            </ul>
+
+            <div style="margin-top: 30px; padding: 20px; background-color: #ffe599; text-align: center; border: 1px dashed #ffc107; border-radius: 5px; color: #555;">
+                <p>مساحة إعلانية لأدسنس</p>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            
+            <section id="home">
+                <h2>أفضل ألعاب الأكشن للأندرويد</h2>
+                
+                <div class="games-grid">
+                    
+                    <div class="game-card">
+                        <img src="https://via.placeholder.com/400x200/FF5733/FFFFFF?text=PUBG" alt="PUBG Mobile game cover" class="game-image">
+                        <div class="game-info">
+                            <h3 class="game-title">PUBG Mobile</h3>
+                            <span style="color:#dc3545;">Battle Royale Action</span>
+                            <p class="game-rating">★★★★★</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.tencent.ig" class="download-btn" target="_blank">تحميل من متجر Play</a>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <img src="https://via.placeholder.com/400x200/A0A0A0/FFFFFF?text=COD" alt="Call of Duty Mobile game cover" class="game-image">
+                        <div class="game-info">
+                            <h3 class="game-title">Call of Duty Mobile</h3>
+                            <span style="color:#dc3545;">FPS Action</span>
+                            <p class="game-rating">★★★★☆</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter" class="download-btn" target="_blank">تحميل من متجر Play</a>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <img src="https://via.placeholder.com/400x200/0000FF/FFFFFF?text=Free+Fire" alt="Garena Free Fire game cover" class="game-image">
+                        <div class="game-info">
+                            <h3 class="game-title">Garena Free Fire</h3>
+                            <span style="color:#dc3545;">Survival Shooter</span>
+                            <p class="game-rating">★★★★☆</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.dts.freefireth" class="download-btn" target="_blank">تحميل من متجر Play</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="privacy" class="legal-content">
+                <h1>سياسة الخصوصية</h1>
+                <p>تاريخ السريان: [تاريخ اليوم]. نحن في [اسم موقعك] نقدر خصوصية زوارنا. توضح هذه الوثيقة أنواع المعلومات التي نجمعها وكيفية استخدامها.</p>
+                <h3>استخدام خدمات الطرف الثالث (Google AdSense)</h3>
+                <p>نحن نستخدم جوجل أدسنس لعرض إعلانات تتناسب مع اهتمامات زوارنا. يستخدم أدسنس ملفات تعريف الارتباط (Cookies) لهذه الأغراض.</p>
+                <p>للاطلاع على كيفية تعامل جوجل مع البيانات، يرجى زيارة <a href="https://policies.google.com/technologies/ads" target="_blank">سياسة الخصوصية لشبكة الإعلانات والمحتوى من Google</a>.</p>
+            </section>
+            
+            <section id="about" class="about-page">
+                <h1>من نحن</h1>
+                <p>نحن فريق من عشاق ألعاب الأندرويد، أنشأنا هذا الموقع في عام 2024 بهدف واحد: أن نكون مصدرك الموثوق لاكتشاف أفضل الألعاب المتوفرة على متجر Google Play.</p>
+                <p>نحن نقدم مراجعات صادقة، ونصائح للعب، وروابط مباشرة وآمنة لضمان أفضل تجربة لك.</p>
+            </section>
+
+            <section id="contact" class="contact-page">
+                <h1>📨 تواصل معنا</h1>
+                <p>نحن هنا للإجابة على جميع استفساراتكم واقتراحاتكم.</p>
+                <form action="#" method="POST">
+                    <input type="text" id="c_name" name="name" required placeholder="الاسم الكامل">
+                    <input type="email" id="c_email" name="email" required placeholder="البريد الإلكتروني (للرد عليك)">
+                    <textarea id="c_message" name="message" required placeholder="اكتب رسالتك هنا"></textarea>
+                    <button type="submit">إرسال الرسالة</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section about-us">
+                <h3>عن الموقع</h3>
+                <p>منصة متخصصة في مراجعة وتقديم أفضل ألعاب الأندرويد.</p>
+            </div>
+
+            <div class="footer-section quick-links">
+                <h3>روابط قانونية</h3>
+                <ul>
+                    <li><a href="#privacy">سياسة الخصوصية</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#home">الصفحة الرئيسية</a></li>
+                </ul>
+            </div>
+            
+             <div class="footer-section social-media">
+                <h3>تابعنا</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="https://via.placeholder.com/24/3b5998/ffffff?text=F" alt="فيسبوك"></a>
+                    <a href="#"><img src="https://via.placeholder.com/24/1da1f2/ffffff?text=T" alt="تويتر"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 [اسم موقعك]. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.legal-content, .contact-page, .about-page, #home');
+            
+            function showSection(id) {
+                sections.forEach(section => {
+                    section.style.display = 'none';
+                });
+                const target = document.querySelector(id);
+                if (target) {
+                    target.style.display = 'block';
+                    window.scrollTo(0, 0); // للعودة إلى أعلى الصفحة
+                } else {
+                     document.getElementById('home').style.display = 'block';
+                }
+            }
+
+            // إظهار الصفحة الرئيسية عند التحميل
+            showSection('#home'); 
+
+            document.querySelectorAll('.category-list a, .footer-section a').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    showSection(targetId);
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
